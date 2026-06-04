@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Profil</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#5f5a80">
+
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-4">
+
+<h1 class="text-xl font-bold mb-4">Profil</h1>
+
+<p>Stockage local activé</p>
+<p>Données sauvegardées dans le navigateur</p>
+
+<button class="mt-4 p-3 bg-red-500 text-white w-full"
+onclick="clearData()">
+Supprimer les données
+</button>
+
+<nav class="mt-6 flex justify-around">
+<a href="index.html">Accueil</a>
+<a href="historique.html">Historique</a>
+<a href="graphiques.html">Graphiques</a>
+<a href="profil.html">Profil</a>
+</nav>
+
+<script src="app.js"></script>
+<script>
+registerSW();
+</script>
+
+</body>
+</html>
