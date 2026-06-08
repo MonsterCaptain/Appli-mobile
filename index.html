@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Suivi hormonal</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#5f5a80">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body { font-family: sans-serif; }
+.slider { width: 100%; }
+</style>
+</head>
+
+<body class="p-4">
+
+<h1 class="text-xl font-bold mb-4">Suivi hormonal</h1>
+
+<!-- Humeur -->
+<label>Humeur: <span id="humeur-val">5</span></label>
+<input id="humeur" type="range" min="1" max="10" value="5" class="slider"
+oninput="document.getElementById('humeur-val').innerText=this.value">
+
+<!-- Libido -->
+<label class="mt-4 block">Libido: <span id="libido-val">5</span></label>
+<input id="libido" type="range" min="1" max="10" value="5" class="slider"
+oninput="document.getElementById('libido-val').innerText=this.value">
+
+<!-- Fatigue -->
+<label class="mt-4 block">Fatigue: <span id="fatigue-val">5</span></label>
+<input id="fatigue" type="range" min="1" max="10" value="5" class="slider"
+oninput="document.getElementById('fatigue-val').innerText=this.value">
+
+<button class="mt-6 p-3 bg-purple-600 text-white w-full"
+onclick="saveEntry()">
+Enregistrer
+</button>
+
+<nav class="mt-6 flex justify-around">
+<a href="index.html">Accueil</a>
+<a href="historique.html">Historique</a>
+<a href="graphiques.html">Graphiques</a>
+<a href="profil.html">Profil</a>
+</nav>
+
+<script src="app.js"></script>
+<script>
+registerSW();
+</script>
+
+</body>
+</html>
