@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="#5f5a80"/>
+  <!-- Soft inner glow -->
+  <circle cx="256" cy="256" r="192" fill="#7b75a0" opacity="0.4"/>
+  <!-- Leaf / spa symbol -->
+  <g transform="translate(256,256)">
+    <!-- Main leaf -->
+    <path d="M0,-128 C75,-75 100,0 54,80 C28,122 -28,122 -54,80 C-100,0 -75,-75 0,-128 Z" fill="#d2e5cb" opacity="0.95"/>
+    <!-- Inner vein -->
+    <line x1="0" y1="-112" x2="0" y2="90" stroke="#52634e" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+    <!-- Side veins -->
+    <line x1="0" y1="-26" x2="48" y2="20" stroke="#52634e" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="0" y1="-26" x2="-48" y2="20" stroke="#52634e" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="0" y1="22" x2="38" y2="58" stroke="#52634e" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+    <line x1="0" y1="22" x2="-38" y2="58" stroke="#52634e" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+    <!-- Small heart -->
+    <path d="M0,112 C0,112 -26,90 -26,74 C-26,62 -14,54 0,66 C14,54 26,62 26,74 C26,90 0,112 0,112 Z" fill="#ffffff" opacity="0.9"/>
+  </g>
+</svg>
