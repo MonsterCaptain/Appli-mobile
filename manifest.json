@@ -1,6 +1,7 @@
 {
   "name": "Suivi Hormonal",
   "short_name": "Hormone",
+  "description": "Application de suivi hormonal personnel",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
